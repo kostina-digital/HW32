@@ -1,0 +1,114 @@
+[
+  {
+    "series_number": 1,
+    "title_uk": "Harry Potter and the Philosopher's Stone",
+    "title_us": "Harry Potter and the Sorcerer's Stone",
+    "publication_year_uk": 1997,
+    "publication_date_uk": "1997-06-26",
+    "publisher_uk": "Bloomsbury (UK)",
+    "publication_year_us": 1998,
+    "publisher_us": "Scholastic (US)",
+    "description": "Harry discovers he is a wizard and begins his first year at Hogwarts, uncovering the mystery of the Philosopher’s Stone.",
+    "print_run": {
+      "note": "The first UK hardback print run is widely reported as ~500 copies; paperbacks followed with additional runs. Exact total print-run figures were never officially consolidated."
+    },
+    "interesting_fact": "Early UK first-edition hardbacks with a young-wizard image and a misspelling of J.K. Rowling's name on the copyright page are highly collectible.",
+    "image": "images/book1.jpg"
+  },
+  {
+    "series_number": 2,
+    "title_uk": "Harry Potter and the Chamber of Secrets",
+    "title_us": "Harry Potter and the Chamber of Secrets",
+    "publication_year_uk": 1998,
+    "publication_date_uk": "1998-07-02",
+    "publisher_uk": "Bloomsbury (UK)",
+    "publication_year_us": 1999,
+    "publisher_us": "Scholastic (US)",
+    "description": "In his second year, Harry confronts a dark force unleashed from the Chamber of Secrets and the legend of the Heir of Slytherin.",
+    "print_run": {
+      "note": "Initial print-run counts were not officially published; the book went through rapid reprints in both the UK and US."
+    },
+    "interesting_fact": "Introduces the first Horcrux revealed in the series (Tom Riddle’s diary), though its true nature is confirmed later.",
+    "image": "images/book2.jpg"
+  },
+  {
+    "series_number": 3,
+    "title_uk": "Harry Potter and the Prisoner of Azkaban",
+    "title_us": "Harry Potter and the Prisoner of Azkaban",
+    "publication_year_uk": 1999,
+    "publication_date_uk": "1999-07-08",
+    "publisher_uk": "Bloomsbury (UK)",
+    "publication_year_us": 1999,
+    "publisher_us": "Scholastic (US)",
+    "description": "Harry learns the truth about Sirius Black and his parents’ past while mastering the Patronus Charm to face Dementors.",
+    "print_run": {
+      "note": "Exact first print figures are not publicly consolidated; demand led to multiple quick reprints."
+    },
+    "interesting_fact": "Won the 1999 Whitbread Children’s Book Award (now Costa) and the 2000 Locus Award for Best Young Adult Book.",
+    "image": "images/book3.jpg"
+  },
+  {
+    "series_number": 4,
+    "title_uk": "Harry Potter and the Goblet of Fire",
+    "title_us": "Harry Potter and the Goblet of Fire",
+    "publication_year_uk": 2000,
+    "publication_date_uk": "2000-07-08",
+    "publisher_uk": "Bloomsbury (UK)",
+    "publication_year_us": 2000,
+    "publisher_us": "Scholastic (US)",
+    "description": "Harry is unexpectedly entered into the Triwizard Tournament, leading to Voldemort’s return and a darker turn for the series.",
+    "print_run": {
+      "note": "Major global release with very large first print runs across markets; precise totals vary by territory and are not centrally published."
+    },
+    "interesting_fact": "Marked a tonal shift to darker themes and significantly increased the series’ page counts.",
+    "image": "images/book4.jpg"
+  },
+  {
+    "series_number": 5,
+    "title_uk": "Harry Potter and the Order of the Phoenix",
+    "title_us": "Harry Potter and the Order of the Phoenix",
+    "publication_year_uk": 2003,
+    "publication_date_uk": "2003-06-21",
+    "publisher_uk": "Bloomsbury (UK)",
+    "publication_year_us": 2003,
+    "publisher_us": "Scholastic (US)",
+    "description": "Harry forms Dumbledore’s Army as the Ministry denies Voldemort’s return, culminating in a battle at the Department of Mysteries.",
+    "print_run": {
+      "note": "Very large initial print runs in the UK and US; publishers announced figures by market, but a single global figure is not official."
+    },
+    "interesting_fact": "Introduces the prophecy about Harry and Voldemort; explores themes of media influence and government control.",
+    "image": "images/book5.jpg"
+  },
+  {
+    "series_number": 6,
+    "title_uk": "Harry Potter and the Half-Blood Prince",
+    "title_us": "Harry Potter and the Half-Blood Prince",
+    "publication_year_uk": 2005,
+    "publication_date_uk": "2005-07-16",
+    "publisher_uk": "Bloomsbury (UK)",
+    "publication_year_us": 2005,
+    "publisher_us": "Scholastic (US)",
+    "description": "Harry delves into Voldemort’s past through Dumbledore’s lessons and confronts the mystery of the Half-Blood Prince’s textbook.",
+    "print_run": {
+      "note": "Record-breaking launch day sales; initial runs were extremely high, with multiple reprints following quickly."
+    },
+    "interesting_fact": "Reveals the Horcrux strategy explicitly and sets up the quest that drives the finale.",
+    "image": "images/book6.jpg"
+  },
+  {
+    "series_number": 7,
+    "title_uk": "Harry Potter and the Deathly Hallows",
+    "title_us": "Harry Potter and the Deathly Hallows",
+    "publication_year_uk": 2007,
+    "publication_date_uk": "2007-07-21",
+    "publisher_uk": "Bloomsbury (UK)",
+    "publication_year_us": 2007,
+    "publisher_us": "Scholastic (US)",
+    "description": "Harry, Ron, and Hermione leave Hogwarts to hunt Horcruxes, uncover the legend of the Deathly Hallows, and face Voldemort in the final battle.",
+    "print_run": {
+      "note": "Among the largest first print runs for any book in history, especially in the US; exact combined global figure is not officially consolidated."
+    },
+    "interesting_fact": "Released simultaneously in many countries with tight embargoes to prevent leaks; midnight release parties became a global phenomenon.",
+    "image": "images/book7.jpg"
+  }
+]

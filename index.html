@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HP Universe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <meta name="description" content="Welcome to HP Universe, a hub for all things Harry Potter.">
+    <meta name="keywords" content="Harry Potter, HP Universe, magic, wizards, witches">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="container navbar-container">
+        <div class="navbar-brand">
+            <img src="images/logo.png" alt="logo image" class="logo-img">
+            <p class="logo_title"><br>Hogwarts <br>... Paradise</p>
+        </div>
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li><a href="index.html">Home</a></li>
+
+                <li class="has-dropdown">
+                    <a href="index.html">Characters ▾</a>
+                    <ul class="dropdown">
+                        <li><a href="index.html">All Characters</a></li>
+                        <li><a href="#students" id="hogwartsStudents">Hogwarts Students</a></li>
+                        <li><a href="#staff" id="hogwartsStaff">Hogwarts Staff</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-dropdown">
+                    <a href="#houses">Houses ▾</a>
+                    <ul class="dropdown">
+                        <li><a href="#griffindor">Gryffindor</a></li>
+                        <li><a href="#slytherin">Slytherin</a></li>
+                        <li><a href="#hufflepuff">Hufflepuff</a></li>
+                        <li><a href="#ravenclaw">Ravenclaw</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-dropdown">
+                    <a href="#world">Wizard World ▾</a>
+                    <ul class="dropdown">
+                        <li><a href="#spells">Spells</a></li>
+                        <li><a href="#elixir">Elixirs</a></li>
+                        <li><a href="#creatures">Creatures</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero" id="hero">
+            <h1 class="hero-title">All spells, stories, and secrets of the Harry Potter universe - in one place.</h1>
+            <button class="hero-button">Learn More</button>
+        </section>
+        <!-- 
+        <section class="books-carusel">
+            <h2>Harry Potter Book Series</h2>
+                <div class="carousel">
+                    <div class="slides">
+                    <img class="slides__img" src="images/book1.png" alt="1">
+                    <img class="slides__img" src="images/book2.png" alt="2">
+                    <img class="slides__img" src="images/book3.png" alt="3">
+                    <img class="slides__img" src="images/book4.png" alt="4">
+                    <img class="slides__img" src="images/book5.png" alt="5">
+                    <img class="slides__img" src="images/book6.png" alt="6">
+                    <img class="slides__img" src="images/book7.png" alt="7">
+                    </div>
+                    <button class="prev">❮</button>
+                    <button class="next">❯</button>
+                  </div>
+        </section> 
+
+        <section id="Houses">
+            <h2>What's your favourite House?</h2>
+            <button> Explore more about Houses</button>
+        </section> -->
+
+        <section class="characters-section">
+            <h2 class="characters-title">Characters</h2>
+            <p class="characters-description">Explore the characters of HP Universe, including Hogwarts students and
+                staff.</p>
+            <div class="search-container">
+                <input class="search-input" type="text" id="searchInput" placeholder=" Search characters by name">
+                <button class="choose-btn" id="onlyStudentsBtn">Only Students</button>
+                <button class="choose-btn" id="onlyStaffBtn">Only Staff</button>
+            </div>
+            <div class="character-container" id="charactersContainer"></div>
+
+            <button class="load-more-btn" id="loadCharactersBtn">Load More Characters</button>
+
+    </main>
+
+    <footer class="container">
+        <p>This site uses only free/public APIs. I do not claim any rights to third‑party materials or trademarks; they
+            remain the property of their respective owners. This site is not affiliated with or endorsed by those rights
+            holders.</p>
+    </footer>
+
+</body>
+
+</html>
