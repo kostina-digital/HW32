@@ -24,14 +24,22 @@
     <header class="container navbar-container">
         <div class="navbar-brand">
             <img src="images/logo.png" alt="logo image" class="logo-img">
-            <p class="logo_title"><br>Hogwarts <br>... Paradise</p>
+            <p class="logo_title"><br>Hogwarts <br>Paradise</p>
         </div>
-        <nav class="navbar">
+
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger" id="hamburger">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+
+        <nav class="navbar" id="navbar">
             <ul class="navbar-list">
-                <li><a href="index.html">Home</a></li>
+                <li class="home-navbar"><a href="index.html">Home</a></li>
 
                 <li class="has-dropdown">
-                    <a href="index.html">Characters ▾</a>
+                    <a href="index.html">Characters</a>
                     <ul class="dropdown">
                         <li><a href="index.html">All Characters</a></li>
                         <li><a href="#students" id="hogwartsStudents">Hogwarts Students</a></li>
@@ -40,7 +48,7 @@
                 </li>
 
                 <li class="has-dropdown">
-                    <a href="#houses">Houses ▾</a>
+                    <a href="#houses">Houses</a>
                     <ul class="dropdown">
                         <li><a href="#griffindor">Gryffindor</a></li>
                         <li><a href="#slytherin">Slytherin</a></li>
@@ -50,7 +58,7 @@
                 </li>
 
                 <li class="has-dropdown">
-                    <a href="#world">Wizard World ▾</a>
+                    <a href="#world">Wizard World</a>
                     <ul class="dropdown">
                         <li><a href="#spells">Spells</a></li>
                         <li><a href="#elixir">Elixirs</a></li>
@@ -95,8 +103,18 @@
                 staff.</p>
             <div class="search-container">
                 <input class="search-input" type="text" id="searchInput" placeholder=" Search characters by name">
-                <button class="choose-btn" id="onlyStudentsBtn">Only Students</button>
-                <button class="choose-btn" id="onlyStaffBtn">Only Staff</button>
+                <div class="choose-btn-container">
+                    <button class="choose-btn" id="onlyStudentsBtn">Only Students</button>
+                    <button class="choose-btn" id="onlyStaffBtn">Only Staff</button>
+                <!-- <select class="search-select" id="searchSelect">
+                    <option value="Choose..." active>Choose...</option>
+                    <option value="12"> 12</option>
+                    <option value="24"> 24</option>
+                    <option value="36"> 36</option>
+                    <option value="48"> 48</option>
+                    <option value="60"> 60</option>
+                </select> -->
+                </div>
             </div>
             <div class="character-container" id="charactersContainer"></div>
 
@@ -105,7 +123,7 @@
     </main>
 
     <footer class="container">
-        <p>This site uses only free/public APIs. I do not claim any rights to third‑party materials or trademarks; they
+        <p class="copyright">This site uses only free/public APIs. I do not claim any rights to third‑party materials or trademarks; they
             remain the property of their respective owners. This site is not affiliated with or endorsed by those rights
             holders.</p>
     </footer>

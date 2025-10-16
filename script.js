@@ -264,3 +264,117 @@ hogwartsStaff.addEventListener("click", () => {
 
 // prev.addEventListener('click', () => showSlide(index - 1));
 // next.addEventListener('click', () => showSlide(index + 1));
+
+// ========================================
+// HAMBURGER MENU FUNCTIONALITY
+// ========================================
+
+// Get DOM elements
+const hamburger = document.getElementById('hamburger');
+const navbar = document.getElementById('navbar');
+const navbarList = document.querySelector('.navbar-list');
+
+// Create overlay element
+const overlay = document.createElement('div');
+overlay.className = 'navbar-overlay';
+document.body.appendChild(overlay);
+
+// Toggle menu function
+function toggleMenu() {
+    const isOpen = navbar.classList.contains('open');
+    
+    if (isOpen) {
+        closeMenu();
+    } else {
+        openMenu();
+    }
+}
+
+// Open menu function
+function openMenu() {
+    navbar.classList.add('open');
+    hamburger.classList.add('active');
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+}
+
+// Close menu function
+function closeMenu() {
+    navbar.classList.remove('open');
+    hamburger.classList.remove('active');
+    overlay.classList.remove('active');
+    document.body.style.overflow = ''; // Restore scrolling
+    
+    // Close all dropdowns
+    const dropdowns = document.querySelectorAll('.has-dropdown');
+    dropdowns.forEach(dropdown => {
+        dropdown.classList.remove('open');
+    });
+}
+
+// Toggle dropdown function
+function toggleDropdown(event) {
+    event.preventDefault();
+    const dropdown = event.currentTarget;
+    const isOpen = dropdown.classList.contains('open');
+    
+    // Close all other dropdowns
+    const allDropdowns = document.querySelectorAll('.has-dropdown');
+    allDropdowns.forEach(d => {
+        if (d !== dropdown) {
+            d.classList.remove('open');
+        }
+    });
+    
+    // Toggle current dropdown
+    if (isOpen) {
+        dropdown.classList.remove('open');
+    } else {
+        dropdown.classList.add('open');
+    }
+}
+
+// Event listeners
+hamburger.addEventListener('click', toggleMenu);
+overlay.addEventListener('click', closeMenu);
+
+// Handle dropdown clicks
+const dropdownItems = document.querySelectorAll('.has-dropdown > a');
+dropdownItems.forEach(item => {
+    item.addEventListener('click', toggleDropdown);
+});
+
+// Close menu when clicking on regular links
+const regularLinks = document.querySelectorAll('.navbar-list > li:not(.has-dropdown) a');
+regularLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+});
+
+// Close menu when clicking on dropdown links
+const dropdownLinks = document.querySelectorAll('.dropdown a');
+dropdownLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+});
+
+// Close menu on escape key
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && navbar.classList.contains('open')) {
+        closeMenu();
+    }
+});
+
+// Handle window resize
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+        closeMenu();
+    }
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (event) => {
+    if (navbar.classList.contains('open') && 
+        !navbar.contains(event.target) && 
+        !hamburger.contains(event.target)) {
+        closeMenu();
+    }
+});
